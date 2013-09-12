@@ -1,0 +1,33 @@
+{
+  "name": "gmailr-requirejs-debug",
+  "version": "1.0",
+  "description": "debug using gmailr with requirejs",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://mail.google.com/*"
+      ],
+      "js": [
+        "lib/js/bower_components/requirejs/require.js",
+        "lib/js/vendor/require-cs.js",
+        "src/js/main.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    "lib/js/bower_components/jquery/jquery.min.js",
+    "lib/js/bower_components/jquery/jquery.min.map",
+    "lib/js/bower_components/underscore/underscore-min.js",
+    "lib/js/bower_components/underscore/underscore-min.map",
+    "lib/js/bower_components/backbone/backbone.js",
+    "lib/js/vendor/gmailr/chrome/lib/gmailr.js",
+    "lib/js/vendor/gmailr/chrome/lib/jquery-bbq/jquery.ba-bbq.min.js",
+    "src/js/app.js"
+  ],
+  "manifest_version": 2,
+  "permissions": [
+    "*://mail.google.com/*",
+    "*://www.jdev.com/*"
+  ]
+}

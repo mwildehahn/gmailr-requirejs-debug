@@ -1,0 +1,9 @@
+{
+  "name": "gmailr-requirejs-debug",
+  "version": "0.0.1",
+  "dependencies": {
+    "underscore": "~1.5.1",
+    "backbone": "~1.0.0",
+    "jquery": "~2.0.3"
+  }
+}
