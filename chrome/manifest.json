@@ -8,14 +8,16 @@
         "*://mail.google.com/*"
       ],
       "js": [
-        "lib/js/bower_components/requirejs/require.js",
-        "lib/js/vendor/require-cs.js",
+        "lib/js/vendor/gmailr/chrome/lib/yepnope.js/yepnope.js",
         "src/js/main.js"
       ],
       "run_at": "document_end"
     }
   ],
   "web_accessible_resources": [
+    "src/js/foo.js",
+    "lib/js/bower_components/requirejs/require.js",
+    "lib/js/vendor/require-cs.js",
     "lib/js/bower_components/jquery/jquery.min.js",
     "lib/js/bower_components/jquery/jquery.min.map",
     "lib/js/bower_components/underscore/underscore-min.js",
